@@ -54,7 +54,6 @@ body {
 /* main header on top of the page with menu */
 .header-wrapper {
   display: flex;
-  align-items: center;
   border-bottom: 1px solid var(--light-grey-background);
 }
 
@@ -63,7 +62,6 @@ body {
   display: flex;
   align-items: center;
   width: var(--content-width);
-  justify-content: space-between;
   margin-left: 215px;
   margin-right: 215px;
   margin-top: 15px;
@@ -75,8 +73,11 @@ body {
   flex-wrap: wrap;
   list-style: none;
   flex-grow: 1;
-  justify-content: space-between;
-  max-width: 30%;
+  gap: 50px;
+}
+
+.right-corner  {
+  justify-content: flex-end;
 }
 
 .top-menu-item {
@@ -107,6 +108,7 @@ body {
   font-family: "Raleway";
   font-size: var(--webstudio-logo-font-size);
   font-weight: 700;
+  margin-right: 97px;
 }
 
 /* main page logo placed in header and foote - white version */
