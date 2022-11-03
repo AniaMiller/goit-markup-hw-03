@@ -20,22 +20,14 @@
   --second-line-heigth: 1.71;
   --padding-between-sections: 94px;
   --webstudio-logo-font-size: 26px;
-
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.17;
   color: var(--basic-text-color);
-  background-color: var(--light-grey-background);
-  background-color: var(--white);
-  text-decoration: none;
+  background-color: var(--bright-background);
   letter-spacing:var(--default-letter-spacing);
-  margin: auto;
-  width: var(--full-web-width);
 }
 
 /* main page content comtainer */
@@ -43,6 +35,12 @@ body {
   width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
 }
 
 /* space between sections - main page view */
@@ -54,6 +52,7 @@ body {
 /* main header on top of the page with menu */
 .header-wrapper {
   display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--light-grey-background);
 }
 
@@ -61,23 +60,15 @@ body {
 .navigation-wrapper {
   display: flex;
   align-items: center;
-  width: var(--content-width);
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-top: 25px;
-  margin-bottom: 24px;
 }
 
 .top-menu {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  flex-grow: 1;
   gap: 50px;
 }
 
 .right-corner  {
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .top-menu-item {
@@ -88,6 +79,8 @@ body {
 .top-menu-link {
   color: var(--basic-text-color);
   text-decoration: none;
+  padding: 32px 0;
+  display: block;
 }
 
 .top-menu-link:hover,
@@ -104,12 +97,17 @@ body {
   line-height: 1.19;
 }
 
+a.webstudio {
+  margin-right: 93px;
+  text-decoration: none;
+}
+
 /* main page logo placed in header and footer - dark version */
 .studio-dark {
   font-family: "Raleway";
   font-size: var(--webstudio-logo-font-size);
+  color: var(--basic-text-color);
   font-weight: 700;
-  margin-right: 97px;
 }
 
 /* main page logo placed in header and footer - white version */
@@ -134,26 +132,15 @@ body {
 }
 
 .order-service-wrapper {
-  display: flex;
-  flex-direction: column;
   background-color: var(--dark-background);
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.service-order-text {
-  color: var(--bright-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 /* button on main page for ordering service */
 .service-order-button {
+  display: block;
+  margin: 30px auto;
   border: none;
   border-radius: 4px;
   background-color: var(--item-color);
@@ -166,70 +153,67 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
-  text-decoration: none;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.four-column-wrapper {
+.row-wrapper {
   display: flex;
-  justify-content: center;
-  gap: calc(10%/3);
+  gap: 30px;
 }
 
-.three-column-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: calc(7.5%/2);
-  flex-wrap: wrap;
+.margin-top {
   margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0;
 }
 
-.team-members-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: calc(10%/3);
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Team Members presentation section */
+.tm-card {
   background-color: var(--bright-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
 }
 
-.team-member-name {
+.tm-text-box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.tm-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--basic-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.team-member-position {
+.tm-description {
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .grey {
   background-color: var(--second-background);
 }
 
+.bright-text {
+  color: var(--bright-text-color);
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -240,7 +224,7 @@ h2 {
   margin-bottom: 0;
 }
 
-h4 {
+h3 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -255,60 +239,49 @@ p {
   margin-bottom: 0;
 }
 
-.gallery-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .gallery-menu {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin: 0;
 }
 
-.gallery-grid-wrapper {
+.grid-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
   justify-content: center;
   gap: 30px 30px;
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0;
 }
 
-.bottom-border {
+.card-box {
   border-bottom: 1px solid var(--photo-border-color);
+  background-color: var(--bright-background);
 }
 
-.gallery-photo-title {
+.card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--basic-text-color);
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 0px
 }
 
-.gallery-photo-description {
+.card-description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--light-text-color);
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
+}
+
+.card-text-box {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .gallery-menu-button {
-  text-decoration: none;
   border: none;
-  text-align: center;
   border-radius: 4px;
   background-color: var(--second-background);
-  color: var(--basic-text-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -331,13 +304,9 @@ p {
 
 /* dark footer description positioning */
 .dark-webstudio {
-  display: flex;
-  align-items: center;
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 200px;
-  padding-right: 200px;
 }
 
 .address {

@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WebStudio Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/modern-normalize.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <header class="header-wrapper">
-            <nav class="navigation-wrapper container">
-                <div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="container inline">
+            <nav class="navigation-wrapper">
+                <a class="webstudio" href="index.html">
                     <span class="web">Web</span>
                     <span class="studio-dark">Studio</span>
-                </div>
+                </a>
                 <ul class="top-menu">
                     <li class="top-menu-item">
                         <a class="top-menu-link" href="index.html">Studio</a>
@@ -32,151 +34,146 @@
                         <a class="top-menu-link" href="#">Contacts</a>
                     </li>
                 </ul>
-                <ul class="top-menu right-corner">
-                    <li class="top-menu-item">
-                        <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
+            </nav>
+            <ul class="top-menu right-corner">
+                <li class="top-menu-item">
+                    <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
+                </li>
+                <li class="top-menu-item">
+                    <a class="contact" href="./info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <ul class="gallery-menu">
+                    <li>
+                        <button class="gallery-menu-button" type="button">
+                            All
+                        </button>
                     </li>
-                    <li class="top-menu-item">
-                        <a class="contact" href="./info@devstudio.com">info@devstudio.com</a>
+                    <li>
+                        <button class="gallery-menu-button" type="button">
+                            Web-sites
+                        </button>
+                    </li>
+                    <li>
+                        <button class="gallery-menu-button" type="button">
+                            Apps
+                        </button>
+                    </li>
+                    <li>
+                        <button class="gallery-menu-button" type="button">
+                            Design
+                        </button>
+                    </li>
+                    <li>
+                        <button class="gallery-menu-button" type="button">
+                            Marketing
+                        </button>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        
-            <main>
-                <section class="section">
-                    <div class="gallery-wrapper container">
-                        <ul class="gallery-menu">
-                            <li>
-                                <button class="gallery-menu-button" type="button">
-                                    All
-                                </button>
-                            </li>
-                            <li>
-                                <button class="gallery-menu-button" type="button">
-                                    Web-sites
-                                </button>
-                            </li>
-                            <li>
-                                <button class="gallery-menu-button" type="button">
-                                    Apps
-                                </button>
-                            </li>
-                            <li>
-                                <button class="gallery-menu-button" type="button">
-                                    Design
-                                </button>
-                            </li>
-                            <li>
-                                <button class="gallery-menu-button" type="button">
-                                    Marketing
-                                </button>
-                            </li>
-                        </ul>
-                        <ul class="gallery-grid-wrapper container">
-                            <li class="bottom-border">
-                                <img
-                                src="images/techocrack_laptop.jpg"
-                                alt="Technocrack"
-                                />
-                                <p class="gallery-photo-title">Technoduck</p>
-                                <p class="gallery-photo-description">Web-site</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/new_orlean_vs_golden_star.jpg"
-                                alt="New Orlean vs Gold Star"
-                                />
-                                <p class="gallery-photo-title">Poster New Orlean vs Gold Star</p>
-                                <p class="gallery-photo-description">Design</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/seafood_restaurant.jpg"
-                                alt="Seafood Restaurant"
-                                />
-                                <p class="gallery-photo-title">Seafood Restaurant</p>
-                                <p class="gallery-photo-description">Apps</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/project_prime_headphones.jpg"
-                                alt="Projekt Prime"
-                                />
-                                <p class="gallery-photo-title">Project Ptime</p>
-                                <p class="gallery-photo-description">Marketing</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/project_boxes.jpg"
-                                alt="Project Boxes"
-                                />
-                                <p class="gallery-photo-title">Project Boxes</p>
-                                <p class="gallery-photo-description">Apps</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/inspiration_no_borders_monitor.jpg"
-                                alt="No Borders"
-                                />
-                                <p class="gallery-photo-title">Inspiration has no Borders</p>
-                                <p class="gallery-photo-description">Web-site</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/limited_edition_magazyn.jpg"
-                                alt="Limited edition"
-                                />
-                                <p class="gallery-photo-title">Limited Edition</p>
-                                <p class="gallery-photo-description">Design</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/project_lab_tag.jpg"
-                                alt="Project LAB"
-                                />
-                                <p class="gallery-photo-title">Project LAB</p>
-                                <p class="gallery-photo-description">Marketing</p>
-                            </li>
-                            <li class="bottom-border">
-                                <img
-                                src="images/growing_business_laptop.jpg"
-                                alt="Growing Business"
-                                />
-                                <p class="gallery-photo-title">Growing Business</p>
-                                <p class="gallery-photo-description">Apps</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </main>
+            </div>
+            <div class="container">
+                <ul class="grid-wrapper margin-top">
+                    <li class="card-box">
+                        <img src="images/techocrack_laptop.jpg" alt="Technocrack" />
+                        <div class="card-text-box">
+                            <p class="card-title">Technoduck</p>
+                            <p class="card-description">Web-site</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/new_orlean_vs_golden_star.jpg" alt="New Orlean vs Gold Star" />
+                        <div class="card-text-box">
+                            <p class="card-title">Poster New Orlean vs Gold Star</p>
+                            <p class="card-description">Design</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/seafood_restaurant.jpg" alt="Seafood Restaurant" />
+                        <div class="card-text-box">
+                            <p class="card-title">Seafood Restaurant</p>
+                            <p class="card-description">Apps</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/project_prime_headphones.jpg" alt="Projekt Prime" />
+                        <div class="card-text-box">
+                            <p class="card-title">Project Ptime</p>
+                            <p class="card-description">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/project_boxes.jpg" alt="Project Boxes" />
+                        <div class="card-text-box">
+                            <p class="card-title">Project Boxes</p>
+                            <p class="card-description">Apps</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/inspiration_no_borders_monitor.jpg" alt="No Borders" />
+                        <div class="card-text-box">
+                            <p class="card-title">Inspiration has no Borders</p>
+                            <p class="card-description">Web-site</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/limited_edition_magazyn.jpg" alt="Limited edition" />
+                        <div class="card-text-box">
+                            <p class="card-title">Limited Edition</p>
+                            <p class="card-description">Design</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/project_lab_tag.jpg" alt="Project LAB" />
+                        <div class="card-text-box">
+                            <p class="card-title">Project LAB</p>
+                            <p class="card-description">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="card-box">
+                        <img src="images/growing_business_laptop.jpg" alt="Growing Business" />
+                        <div class="card-text-box">
+                            <p class="card-title">Growing Business</p>
+                            <p class="card-description">Apps</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="dark-webstudio">
+        <div class="container">
+            <address class="normal-style">
+                <a class="webstudio" href="index.html">
+                    <span class="web">Web</span>
+                    <span class="studio-white">Studio</span>
+                </a>
+                <ul>
+                    <li>
+                        <p class="address">
+                            695 Park Ave, New York, NY 10065,<br>
+                            United States
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="contact" href="mailto:info@example.com">info@example.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
+                        </p>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
 
-            <footer class="dark-webstudio">
-                <address class="normal-style container">
-                    <ul>
-                        <li>
-                            <span class="web">Web</span>
-                            <span class="studio-white">Studio</span>
-                        </li>
-                        <li>
-                            <p class="address">
-                                695 Park Ave, New York, NY 10065,<br>
-                                United States
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a class="contact" href="mailto:info@example.com">info@example.com</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a class="contact" href="tel:+12127724150">+1 212-772-4150</a>
-                            </p>
-                        </li>
-                    </ul>
-                </address>
-            </footer>
-
-    </body>
 </html>
