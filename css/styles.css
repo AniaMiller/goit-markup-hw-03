@@ -30,17 +30,41 @@ body {
   letter-spacing:var(--default-letter-spacing);
 }
 
-/* main page content comtainer */
-.container {
-  width: var(--content-width);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-.inline {
-  display: flex;
-  align-items: center;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* space between sections - main page view */
@@ -49,17 +73,28 @@ body {
   padding-bottom: var(--padding-between-sections);
 }
 
-/* main header on top of the page with menu */
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--light-grey-background);
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-/* main navigation menu on top of the page */
-.navigation-wrapper {
+/* main page content container */
+.container {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.inline {
   display: flex;
   align-items: center;
+}
+
+/* main header on top of the page with menu */
+.header-wrapper {
+  border-bottom: 1px solid var(--light-grey-background);
 }
 
 .top-menu {
@@ -71,14 +106,10 @@ body {
   margin-left: auto;
 }
 
-.top-menu-item {
+.top-menu-link {
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-.top-menu-link {
   color: var(--basic-text-color);
-  text-decoration: none;
   padding: 32px 0;
   display: block;
 }
@@ -88,8 +119,9 @@ body {
   color: var(--hover-active-link-color);
 }
 
-/* main page logo placed in header and footer */
-.web {
+/* header and footer main page logo format */
+.webstudio {
+  margin-right: 93px;
   font-family: "Raleway";
   font-size: var(--webstudio-logo-font-size);
   font-weight: 700;
@@ -97,32 +129,19 @@ body {
   line-height: 1.19;
 }
 
-a.webstudio {
-  margin-right: 93px;
-  text-decoration: none;
-}
-
 /* main page logo placed in header and footer - dark version */
 .studio-dark {
-  font-family: "Raleway";
-  font-size: var(--webstudio-logo-font-size);
   color: var(--basic-text-color);
-  font-weight: 700;
 }
 
 /* main page logo placed in header and footer - white version */
 .studio-white {
-  font-family: "Raleway";
-  font-size: var(--webstudio-logo-font-size);
-  font-weight: 700;
   color: var(--bright-text-color);
-  line-height: 1.19;
 }
 
 .contact {
   color: var(--contact-text-color);
   line-height: var(--second-line-heigth);
-  text-decoration: none;
   letter-spacing: 0.02em;
 }
 
@@ -137,12 +156,19 @@ a.webstudio {
   padding-bottom: 200px;
 }
 
+.order-bright-text {
+  color: var(--bright-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 /* button on main page for ordering service */
 .service-order-button {
-  display: block;
-  margin: 30px auto;
-  border: none;
-  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 30px;
   background-color: var(--item-color);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -157,26 +183,39 @@ a.webstudio {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.padding-top-off  {
+  padding-top: 0;
+}
+
 .row-wrapper {
   display: flex;
   gap: 30px;
 }
 
-.margin-top {
-  margin-top: 50px;
+.column-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.column-text {
+  color: var(--light-text-color);
+  line-height: var(--second-line-heigth);
 }
 
 /* Team Members presentation section */
-.tm-card {
-  background-color: var(--bright-background);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.tm-photo {
+  width: 270px;
 }
 
 .tm-text-box {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--bright-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .tm-name {
@@ -196,100 +235,23 @@ a.webstudio {
   background-color: var(--second-background);
 }
 
-.bright-text {
-  color: var(--bright-text-color);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-p {
-  color: var(--light-text-color);
-  line-height: var(--second-line-heigth);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .gallery-menu {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.grid-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px 30px;
-}
-
-.card-box {
-  border-bottom: 1px solid var(--photo-border-color);
-  background-color: var(--bright-background);
-}
-
-.card-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--basic-text-color);
-  letter-spacing: 0.06em;
-}
-
-.card-description {
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--light-text-color);
-}
-
-.card-text-box {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
 .gallery-menu-button {
-  border: none;
-  border-radius: 4px;
   background-color: var(--second-background);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 22px;
+  padding-right: 22px;
   padding-bottom: 6px;
   padding-top: 6px;
+  letter-spacing: 00.03em;
 }
 
 .gallery-menu-button:hover,
@@ -298,21 +260,59 @@ p {
   color: var(--bright-text-color)
 }
 
-.normal-style{
-  font-style: normal;
+/* margin used to push header from rest of content in container */
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-photo {
+  width: 370px;
+}
+
+.card-text-box {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--photo-border-color);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--basic-text-color);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--light-text-color);
 }
 
 /* dark footer description positioning */
-.dark-webstudio {
+.footer-dark-format {
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.address {
+/* margin used in footer to move address from logo*/
+.address-margin{
+  margin-top: 20px;
+}
+
+.address-text {
   color: var(--bright-text-color);
   line-height: var(--second-line-heigth);
-  text-decoration: none;
 }
 
 .address:hover,
